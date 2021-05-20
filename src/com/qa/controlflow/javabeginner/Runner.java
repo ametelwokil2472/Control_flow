@@ -6,6 +6,7 @@ import com.qa.controlflow.javabeginner.constructors.Person;
 import com.qa.controlflow.javabeginner.iteration.*;
 import com.qa.controlflow.javabeginner.operators.*;
 import com.qa.controlflow.javabeginner.strings.*;
+
 public class Runner {
 
 	public static void main(String[] args) {
@@ -75,6 +76,10 @@ System.out.println(BlackJack.blackjack(21, 21));
 	    // String x = Amet.name + " with " + myCar.setbrand("Toyota")+ " "+ myCar.getYearModel() + " comming";
 	    // System.out.println(x);
 	     
+//========================OOP=============================================================     
+	     
+//	     double wsalary = Employee.calculateWeeklySalary(6678);
+//	    System.out.println(wsalary);
 	}
 
 }
