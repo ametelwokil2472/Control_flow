@@ -12,28 +12,30 @@ public static void main(String[] args) {
     List<Vehicle> downtown = new ArrayList<Vehicle>();
     Garage location = new Garage(downtown);
     
-    //adds two vehicals
+//=================adds vehicles=================================
     location.addVehcle(Toyota);
     location.addVehcle(sport);
-    //calculate bill
+    
+ //================calculate bill================================
     double bill = location.calcBill();
-    System.out.println("Bill is: "+ bill + "$");
-    //print what we have in the garage
+    System.out.println("Cost is: "+ bill + "$");
+//===============Vehicles  in the garage==============================
     location.printList();
-    //remove by object.
+//=====================remove by object====================================
     location.removeByID(2);
     location.printList();
 
-    // remove by id.
     location.removeByID(2);
     location.printList();
-    //add the truck and then remove all.
+    
+    
+//===============add the truck and then remove all.
     location.addVehcle(isuzu);
     location.printList();
     location.removeAll();
     location.printList();
 
-    //remove by type
+//===============Remove=====================================
     location.addVehcle(isuzu);
     location.printList();
     location.removeByType("Truck");
