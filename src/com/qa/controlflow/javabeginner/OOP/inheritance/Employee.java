@@ -4,18 +4,14 @@ public class Employee extends Person {
 
 	private double annualSalary;
 	private double weeklySalary;
+		
 	
-	
-	public Employee( double annualSalary,double weeklySalary ) {
+public  Employee(String name, int age, String gender,double annualSalary) {
+		super(name, age, gender);
 		this.annualSalary = annualSalary;
-		this.weeklySalary = weeklySalary;
+		
+		
 	}
-
-	public Employee(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
-	
 	public double getAnnualSalary() {
 		return annualSalary;
 	}
@@ -30,7 +26,7 @@ public class Employee extends Person {
 		this.weeklySalary = weeklySalary;
 	}
 	
-     public  double calculateWeeklySalary(double annualSalary) {
-	 return this.weeklySalary = annualSalary/53;
+     public double calculateWeeklySalary() {
+	  return weeklySalary = annualSalary/52.0;
  }
 }

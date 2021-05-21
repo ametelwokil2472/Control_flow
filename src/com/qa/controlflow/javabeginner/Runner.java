@@ -1,4 +1,5 @@
 package com.qa.controlflow.javabeginner;
+import com.qa.controlflow.javabeginner.OOP.inheritance.Employee;
 import com.qa.controlflow.javabeginner.conditionals.*;
 import com.qa.controlflow.javabeginner.constructors.Book;
 import com.qa.controlflow.javabeginner.constructors.Car;
@@ -32,7 +33,7 @@ FlowCharts.flowchart(6000);
 
 		
 //=====================BlackJack=============================================		
-System.out.println(BlackJack.blackjack(21, 21));	
+System.out.println(BlackJack.blackjack(19, 16));	
 		
 //===============Unique Sum Given 3 integer values, return their sum.==========	
 		
@@ -56,8 +57,10 @@ System.out.println(BlackJack.blackjack(21, 21));
 		LoopFlowChart.printValueNumber();
 		 LoopFlowChart.flowChart2();
 		 LoopFlowChart.printNumber();
-		 
-		 
+//==========================Number to words method=================	 
+		 NumberToWord obj = new NumberToWord();
+	        System.out.println("*** " + obj.convert(124000));
+	        System.out.println("*** " + obj.convert(-68));
 //===================String===========================================
 		StringCount.toVerticalWords("Ametelwokil");	
 		
@@ -77,9 +80,8 @@ System.out.println(BlackJack.blackjack(21, 21));
 	    // System.out.println(x);
 	     
 //========================OOP=============================================================     
-	     
-//	     double wsalary = Employee.calculateWeeklySalary(6678);
-//	    System.out.println(wsalary);
+	    
+		   
 	}
 
 }

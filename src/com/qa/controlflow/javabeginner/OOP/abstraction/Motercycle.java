@@ -1,36 +1,39 @@
 package com.qa.controlflow.javabeginner.OOP.abstraction;
 
 public  class Motercycle extends Vehicle {
-         private int wheel;
-         
-	public Motercycle(String color, String model, int wheel) {
-		super(color, model);
-		this.wheel = wheel;
-		
+       protected String type;
+
+
+		public Motercycle(int id, String color, String model, int year, String type) {
+		super(id, color, model, year);
+	this.type = type;
 	}
 
-	public int getWheel() {
-		return wheel;
+	public String getType() {
+		return type;
 	}
-	public void setWheel(int wheel) {
-		this.wheel = wheel;
+	public void setType(String type) {
+		this.type = type;
 	}
 	@Override
-	public void drive() {
-		 System.out.println("Motor is in drive mode");
-
-	}
-
-	@Override
-	public void stop() {
-		 System.out.println("Motor is in stop mode");
-
-	}
-
-	@Override
-	public void park() {
-		 System.out.println("Motor is in park mode");
-
-	}
-
+    public String toString() {
+      return (
+        "Model: " +
+        this.model +
+        "\n" +
+        "Year: " +
+        this.year +
+        "\n" +
+        "Type: " +
+        this.type +
+        "\n" +
+        "color: " +
+        this.color +
+        "\n"
+      );
+    }
+    
 }
+   
+
+

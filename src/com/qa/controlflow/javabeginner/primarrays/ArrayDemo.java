@@ -1,6 +1,7 @@
 package com.qa.controlflow.javabeginner.primarrays;
 
 public class ArrayDemo {
+	
 	public static void main(String[] args){
 		int[] anArray = { 7, 6, 10, 28, 55, 40, 89, 19, 10, 19 }; // declare an array of integers
 
@@ -17,7 +18,7 @@ public class ArrayDemo {
 
 		// STRING ARRAY
 
-		String[] names = { "Amet", "TG", "Mame", "Ahmed", "Mame" };
+		String[] names = { "Amet", "TG", "Farah", "Ahmed", "Mame" };
 
 		for (String name : names) {
 			System.out.print(name);
@@ -48,8 +49,11 @@ public class ArrayDemo {
 		}  
 		  
 		// EVEN AND ODD NUMBERS
-		System.out.println(getEvenNumber(20));
-		System.out.println(getEvenNumber(15));
+		
+	boolean frh = getEvenNumber(20);
+	boolean amt = getEvenNumber(15);
+		System.out.println(frh);
+		System.out.println(amt);
 
 	}
 
