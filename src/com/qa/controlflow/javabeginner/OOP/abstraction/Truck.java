@@ -4,38 +4,39 @@ public  class Truck extends Vehicle {
 	
 	   private int load;
 
-	public Truck(String color, String model, int load) {
-		super(color, model);
-		this.load = load;
+
+	Truck(int id, String color, String model, int year, int load) {
+		super(id, color, model, year);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 
 	public int getLoad() {
 		return load;
 	}
 
-
 	public void setLoad(int load) {
 		this.load = load;
 	}
-
-
-	@Override
-	public void drive() {
-		System.out.println("Truck is moving");
-
+	 @Override
+	  public String toString() {
+	    return (
+	      "Model: " +
+	      this.model +
+	      "\n" +
+	      "Year: " +
+	      this.year +
+	      "\n" +
+	      "Manufacturer: " +
+	      this.color +
+	      "\n" +
+	      "Can it fly?: " +
+	      this.load +
+	      "\n"
+	    );
+	  }
 	}
 
-	@Override
-	public void stop() {
-		System.out.println("Truck is stopping");
+	
 
-	}
 
-	@Override
-	public void park() {
-		System.out.println("Motor is in park mode");
-
-	}
-
-}

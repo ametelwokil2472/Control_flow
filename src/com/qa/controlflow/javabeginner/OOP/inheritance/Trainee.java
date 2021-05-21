@@ -1,36 +1,37 @@
 package com.qa.controlflow.javabeginner.OOP.inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Trainee extends Person {
-	private double bursary;
-	private String subjectsLearned;
-
-	public Trainee(double bursary, String subjectsLearned) {
-		this.bursary = bursary;
-		this.subjectsLearned = subjectsLearned;
-	}
-
-	public Trainee(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
-
-	public double getBursary() {
-		return bursary;
-	}
-
-	public void setBursary(double bursary) {
-		this.bursary = bursary;
-	}
-
-	public String getSubjectsLearned() {
-		return subjectsLearned;
-	}
-
-	public void setSubjectsLearned(String subjectsLearned) {
-		this.subjectsLearned = subjectsLearned;
-	}
+//	Attribute
+//	private double bursary;
+//	private String subjectsLearned;
+//	
 	
-//	public String addSubject(String subjectsLearned) {
-//		List<Subject> subjects = new List<subjectsLearned>();
-//}
+	private List <String> subjectslearned = new ArrayList<String>();
+	
+//	Constructor
+	
+	public Trainee(String name,int age, String city) {
+		super(name, age, city);
+//		this.subjectsLearned = subjectsLearned;
+		
+	}
+
+	public List<String> getSubjectslearned() {
+		return subjectslearned;
+	}
+
+	public void setSubjectslearned(List<String> subjectslearned) {
+		this.subjectslearned = subjectslearned;
+	}
+			
+
+	public void addSubject(String music) {
+		System.out.println(subjectslearned.add(music));
+	}
+
+	
+	
 }
