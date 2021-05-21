@@ -27,10 +27,10 @@ public  class Truck extends Vehicle {
 	      "Year: " +
 	      this.year +
 	      "\n" +
-	      "Manufacturer: " +
+	      "color: " +
 	      this.color +
 	      "\n" +
-	      "Can it fly?: " +
+	      "load grade: " +
 	      this.load +
 	      "\n"
 	    );
