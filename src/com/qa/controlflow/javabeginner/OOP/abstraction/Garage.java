@@ -6,9 +6,11 @@ import java.util.List;
 public class Garage {
 	protected List<Vehicle> gar_List;
 	
+//===================CONSTRUCTOR================================
 	public Garage(List<Vehicle> gar_List) {
 	    this.gar_List = gar_List;
 	  }
+//==============METHODS==========================================
 	
 	public void addVehcle(Vehicle rav) {
 	    this.gar_List.add(rav);
@@ -47,19 +49,19 @@ public class Garage {
 		    if (!this.gar_List.isEmpty()) {
 		      List<Vehicle> indexesToRemove = new ArrayList<Vehicle>();
 		      for (int i = 0; i < this.gar_List.size(); i++) {
-		    	  Vehicle e = this.gar_List.get(i);
+		    	  Vehicle x = this.gar_List.get(i);
 		        if (givenType == "Car") {
-		          if (e instanceof Car) {
-		            indexesToRemove.add(e);
+		          if (x instanceof Car) {
+		            indexesToRemove.add(x);
 		          }
 		        }
 		        
 		        if (givenType == "motecycle") {
-		          if (e instanceof Motercycle) {
-		            indexesToRemove.add(e);
+		          if (x instanceof Motercycle) {
+		            indexesToRemove.add(x);
 		          }
 		        }
-		        //remove by types.
+//=================remove by types==========================================.
 		        
 		        indexesToRemove.forEach(index -> {
 		          System.out.println(index);
