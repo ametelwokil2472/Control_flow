@@ -24,6 +24,7 @@ public class Runner {
 		k.removItems(phan);
 		k.registerMemberShip(person1);
 		k.removeMemberShip(person1);
+		person1.setName("TG");
         //k.removAll();
 
 		System.err.println(k);
