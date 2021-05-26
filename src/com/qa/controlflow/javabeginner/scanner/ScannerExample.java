@@ -104,9 +104,10 @@ public class ScannerExample {
 			System.out.println("Enter Your Second Number ");
 			num8 = input.nextInt();
 			if (num8 == 0) {
-				throw new ArithmeticException("Error attampting to divde a number by zoro");
+				throw new ArithmeticException("Error attampting to divde the number by zoro");
 			}
-			// System.out.println("Error: ");
+			//Throw Exception
+			
 			num8 = input.nextInt();
 
 			div = num7 / num8;
@@ -115,7 +116,6 @@ public class ScannerExample {
 		} catch (ArithmeticException | InputMismatchException ex) {
 			System.out.println("Exception: " + ex.toString());
 		}
-
 	}
 
 	public static void mod() {
