@@ -15,17 +15,23 @@ public static int sub(int x, int y) {
 	return x - y;
 }
 
-public static void  div(double x, double y) {
-	if (x > y) {
-		System.out.println(x/y);
-	}else {
-	System.out.println("can not be divided");
-	}
-	}
+public static double  div(double x, double y) {
+	
+	
+	try {
 
+        double result=x/y; 
+        System.out.println(result);
+        System.out.println("inside-try");
 
+    } catch (Exception e) {
 
+        System.out.println("division by zero exception");
+        System.out.println("inside-catch");
 
+    }
+	return x/y;
+}
 }
 
 

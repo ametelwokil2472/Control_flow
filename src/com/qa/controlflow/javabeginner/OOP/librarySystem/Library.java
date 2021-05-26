@@ -44,6 +44,7 @@ public class Library {
   public void removeMemberShip(Person person11) {
 	  personList.remove(person11);
   }
+  
 @Override
 public String toString() {
 	return "Library [isCheckOut=" + isCheckOut + ", LibraryList=" + LibraryList + ", personList=" + personList + "]";
