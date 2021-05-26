@@ -19,7 +19,8 @@ public class ScannerExample {
 			System.out.print("2. Subtraction.\n");
 			System.out.print("3. Multiplication.\n");
 			System.out.print("4. Division.\n");
-			System.out.print("5. Exit\n");
+			System.out.print("5. Modules.\n");
+			System.out.print("6. Exit\n");
 			System.out.print("Select Your choice ");
 
 			choice = input.nextInt();
@@ -46,6 +47,10 @@ public class ScannerExample {
 				div();
 				break;
 			case 5:
+				// Division
+				mod();
+				break;
+			case 6:
 				System.out.println("Exit");
 				flag = false;
 				break;
@@ -67,7 +72,7 @@ public class ScannerExample {
 		System.out.print("\n Enter The Second Number: ");
 		num2 = input.nextInt();
 		sum = num1 + num2;
-		System.out.print("The Sum Of The Numbers is: " + sum);
+		System.out.print("The Sum Of The Numbers is: " + sum + "\n\n");
 	}
 
 	public static void sub() {
@@ -77,7 +82,7 @@ public class ScannerExample {
 		System.out.println("Please Enter The Second Number: ");
 		num4 = input.nextInt();
 		diff = num3 - num4;
-		System.out.println("The difference of the Number: " + diff);
+		System.out.println("The difference of the Number: " + diff+ "\n\n");
 	}
 
 	public static void mult() {
@@ -88,7 +93,7 @@ public class ScannerExample {
 		System.out.println("Please Enter The Second Number : ");
 		num6 = input.nextInt();
 		prod = num5 * num6;
-		System.out.println("The product of the numbers are: " + prod);
+		System.out.println("The product of the numbers are: " + prod+ "\n\n");
 	}
 
 	public static void div() {
@@ -105,7 +110,7 @@ public class ScannerExample {
 			num8 = input.nextInt();
 
 			div = num7 / num8;
-			System.out.println("The quotient is: " + div);
+			System.out.println("The quotient is: " + div+ "\n\n");
 
 		} catch (ArithmeticException | InputMismatchException ex) {
 			System.out.println("Exception: " + ex.toString());
@@ -114,12 +119,12 @@ public class ScannerExample {
 	}
 
 	public static void mod() {
-		int num1, num2, sum;
+		int num1, num2, mod;
 		System.out.print("Enter The First Number: ");
 		num1 = input.nextInt();
 		System.out.print("\n Enter The Second Number: ");
 		num2 = input.nextInt();
-		sum = num1 + num2;
-		System.out.print("The Sum Of The Numbers is: " + sum);
+		mod = num1%num2;
+		System.out.print("The remainder: " + mod + "\n\n");
 	}
 }
